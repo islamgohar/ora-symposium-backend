@@ -76,6 +76,7 @@ kubernetes-deploy:
         code: |
           echo "Docker image and tag:"
           echo "${WERCKER_GIT_BRANCH}-${WERCKER_GIT_COMMIT}"
+          
     - script:
         name: echo deployment file
         code: | 
