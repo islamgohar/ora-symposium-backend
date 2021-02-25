@@ -59,11 +59,12 @@ kubernetes-deploy:
     - bash-template:
         cwd: $WERCKER_ROOT/.
   
-    - script:
-        name: Remove template files
-        cwd: $WERCKER_ROOT/.
-        code: |
-          rm *.template.yaml
+    #- script:
+    #    name: Remove template files
+    #    cwd: $WERCKER_ROOT/.
+    #    code: |
+    #      rm *.template.yaml
+    
     - script:
         name: debug
         cwd: $WERCKER_ROOT/.
@@ -75,6 +76,7 @@ kubernetes-deploy:
         code: |
           echo "Docker image and tag:"
           echo "${WERCKER_GIT_BRANCH}-${WERCKER_GIT_COMMIT}"
+          
     - script:
         name: echo deployment file
         code: | 
@@ -105,6 +107,6 @@ kubernetes-deploy:
   after-steps:
     - install-packages:
         packages: ruby
-    - pasonatquila/pretty-slack-notify@0.3.6:
-        webhook_url: $SLACK_URL
-        channel: $SLACK_CHANNEL
+    #- pasonatquila/pretty-slack-notify@0.3.6:
+    #    webhook_url: $SLACK_URL
+    #    channel: $SLACK_CHANNEL
