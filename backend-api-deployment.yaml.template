@@ -11,7 +11,6 @@ spec:
     protocol: TCP
     targetPort: 4000
   selector:
-   # matchlabels:
     app: $APP_NAME
 ---
 apiVersion: apps/v1
@@ -20,9 +19,9 @@ metadata:
   name: ora-se-symposium-backend-service
 spec:
   replicas: 4
-  selector:
+  #selector:
     #matchLabels:
-      app: $APP_NAME
+      #app: $APP_NAME
   template:
     metadata:
       labels:
@@ -37,7 +36,3 @@ spec:
         ports:
         - containerPort: 4000
           protocol: TCP
-          
-  #selector:
-    #matchlabels:
-      #app: $APP_NAME
