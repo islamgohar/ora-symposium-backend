@@ -20,6 +20,9 @@ metadata:
   name: ora-se-symposium-backend-service
 spec:
   replicas: 4
+  selector:
+    matchLabels:
+      app: nginx
   template:
     metadata:
       labels:
@@ -35,6 +38,6 @@ spec:
         - containerPort: 4000
           protocol: TCP
           
-  selector:
-    matchlabels:
-      app: $APP_NAME
+  #selector:
+    #matchlabels:
+      #app: $APP_NAME
