@@ -11,8 +11,8 @@ spec:
     protocol: TCP
     targetPort: 4000
   selector:
-    matchlabels:
-      app: $APP_NAME
+   # matchlabels:
+    app: $APP_NAME
 ---
 apiVersion: apps/v1
 kind: Deployment
