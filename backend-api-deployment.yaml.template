@@ -36,4 +36,5 @@ spec:
           protocol: TCP
           
   selector:
-    app: $APP_NAME
+    matchlabels:
+      app: $APP_NAME
