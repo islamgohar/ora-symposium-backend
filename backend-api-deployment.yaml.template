@@ -18,10 +18,10 @@ kind: Deployment
 metadata:
   name: ora-se-symposium-backend-service
 spec:
+  selector:
+    matchLabels:
+      app: $APP_NAME
   replicas: 4
-  #selector:
-    #matchLabels:
-      #app: $APP_NAME
   template:
     metadata:
       labels:
