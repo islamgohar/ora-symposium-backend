@@ -36,4 +36,3 @@ spec:
         ports:
         - containerPort: 4000
           protocol: TCP
-
