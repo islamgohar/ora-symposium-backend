@@ -1,4 +1,4 @@
 {
-    "connectionString": "mongodb://mongo_admin:eKLDUx04LA@10.96.5.9/admin:27017",
+    "connectionString": "mongodb://mongo_admin:eKLDUx04LA@10.96.5.9:27017",
     "secret": "ZUtMRFV4MDRMQQ=="
 } 
