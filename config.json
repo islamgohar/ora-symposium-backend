@@ -1,4 +1,4 @@
 {
     "connectionString": "mongodb://mongo_admin:eKLDUx04LA@10.96.5.9:27017",
-    "secret": "eKLDUx04LA"
+    "secret": "gohar-mongodb"
 } 
