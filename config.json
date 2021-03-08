@@ -1,4 +1,4 @@
 {
-    "connectionString": "mongodb://gohar2-mongodb.islam2.svc.cluster.local",
+    "connectionString": "mongodb://mongo_admin:eKLDUx04LA@10.96.5.9/admin:27017",
     "secret": "ZUtMRFV4MDRMQQ=="
 } 
